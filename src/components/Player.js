@@ -6,8 +6,8 @@ export default function Player({
   setTo,
   hand,
   setFrom,
-  setSelectedCard,
-  selectedCard,
+  // setSelectedCard,
+  // selectedCard,
   to,
 }) {
   return (
@@ -16,13 +16,7 @@ export default function Player({
       onClick={() => setTo(player)}
     >
       <p>Player {player}</p>
-      <CardList
-        player={player}
-        cards={hand}
-        setFrom={setFrom}
-        selectedCard={selectedCard}
-        setSelectedCard={setSelectedCard}
-      />
+      <CardList player={player} cards={hand} setFrom={setFrom} />
     </div>
   );
 }
